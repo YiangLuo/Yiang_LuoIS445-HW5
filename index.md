@@ -31,8 +31,6 @@ The bar chart distinguishes different UFO shapes by color and uses a legend to f
 
 **Data transformation:**  
 During data processing, records with missing state or shape were first deleted to retain valid observations. Then groupby was used to aggregate the data by state and shape and count the number of sightings for each shape. Based on this, all unique state names were extracted, sorted, and used to bind Altair's dropdown selector. Interactive selection logic is built using selection_point, and dynamic data filtering based on user selection is implemented using transform_filter, enabling real-time interactive updating of the chart.
-
-
 ---
 
 ## 🔗 References
